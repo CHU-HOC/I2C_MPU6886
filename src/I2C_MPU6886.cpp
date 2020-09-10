@@ -68,7 +68,7 @@ int I2C_MPU6886::begin(void) {
   delay(1);
 
   // SMPLRT_DIV(0x19)
-  writeByte(0x19, 0x05);
+  writeByte(0x19, 0x01);
   delay(1);
 
   // INT_ENABLE(0x38)
