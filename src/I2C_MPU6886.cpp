@@ -55,7 +55,7 @@ int I2C_MPU6886::begin(void) {
   writeByte(0x6b, 1 << 0);
   delay(10);
 
-  // ACCEL_CONFIG(0x1c) : +-8G
+  // ACCEL_CONFIG(0x1c) : +-2G
   writeByte(0x1c, 0x10);
   delay(1);
 
