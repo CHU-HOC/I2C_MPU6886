@@ -56,7 +56,7 @@ int I2C_MPU6886::begin(void) {
   delay(10);
 
   // ACCEL_CONFIG(0x1c) : +-2G
-  writeByte(0x1c, 0x10);
+  writeByte(0x1c, 0x00);
   delay(1);
 
   // GYRO_CONFIG(0x1b) : +-2000dps
