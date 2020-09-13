@@ -76,7 +76,7 @@ int I2C_MPU6886::begin(void) {
   delay(1);
 
   // ACCEL_CONFIG 2(0x1d)
-  writeByte(0x1d, 0x00);
+  writeByte(0x1d, 0x1x);
   delay(1);
 
   // USER_CTRL(0x6a)
